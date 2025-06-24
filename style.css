@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  text-shadow: none;
+}
+
+.login-container {
+  background: rgba(15, 15, 15, 0.85);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  width: 320px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #222;
+  color: #ddd;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #555;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #444;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ddd;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.25s ease;
+}
+
+.login-container button:hover {
+  background: #555;
+}
+
+.hidden {
+  display: none;
+}
+#typewriter {
+  border-right: none !important;
+  animation: none !important;
+  caret-color: transparent !important; /* skjuler den egentlige tekstmarkør */
+  user-select: none !important;
+  pointer-events: none !important;
+}
+

@@ -1,0 +1,341 @@
+/* Grundlæggende body */
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar styles (kan kopieres fra tidligere, eller importeres) */
+.navbar {
+  background-color: #1b1b1b;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.nav-list li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #4b8cfb;
+  border-bottom: 2px solid #4b8cfb;
+}
+
+/* Forum container */
+.forum-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Overskrift */
+.forum-container h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #4b8cfb;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #4b8cfb;
+  padding-bottom: 0.5rem;
+}
+
+/* Indlæg (posts) */
+.post {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(75,140,251,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.post:hover {
+  background-color: #292929;
+}
+
+/* Post header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Post content */
+.post-content {
+  font-size: 1rem;
+  color: #ddd;
+  white-space: pre-wrap; /* bevar linjeskift */
+}
+
+/* Formular til nyt indlæg */
+.new-post-form {
+  max-width: 900px;
+  margin: 3rem auto 1rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(75,140,251,0.15);
+}
+
+.new-post-form textarea {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #ddd;
+  padding: 0.8rem;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.new-post-form textarea:focus {
+  border-color: #4b8cfb;
+}
+
+.new-post-form button {
+  margin-top: 1rem;
+  background-color: #4b8cfb;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.new-post-form button:hover {
+  background-color: #3674d3;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: #ddd;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #2a2a2a;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input, form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 1rem;
+  background-color: #4b8cfb;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+form button:hover {
+  background-color: #3674d3;
+}
+body {
+  background-color: #121212;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+}
+
+.navbar {
+  background: #1e1e1e;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-list a:hover {
+  color: #00ccff;
+}
+
+#content {
+  padding: 20px;
+}
+
+/* DarkChat container */
+#darkChat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  max-height: 400px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  display: none;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Chat messages scrollable area */
+#chatMessages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  background: #121212;
+  border-bottom: 1px solid #333;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #222;
+}
+
+/* Scrollbar til Chrome, Edge */
+#chatMessages::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Hver chat besked */
+.chat-message {
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+/* Email navn */
+.chat-message strong {
+  color: #80c0ff;
+  font-weight: 600;
+}
+
+/* Tidspunkt */
+.chat-message span {
+  color: #666;
+  font-size: 0.7rem;
+  margin-left: 6px;
+}
+
+/* Chat input form */
+#chatForm {
+  display: flex;
+  padding: 10px;
+  background: #1f1f1f;
+  border-top: 1px solid #333;
+}
+
+/* Chat input felt */
+#chatInput {
+  flex: 1;
+  padding: 8px 12px;
+  background: #222;
+  border: none;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+#chatInput:focus {
+  background: #333;
+}
+
+/* Send knap */
+#chatForm button {
+  margin-left: 8px;
+  background: #395a8c;
+  border: none;
+  border-radius: 6px;
+  color: #eee;
+  font-weight: 600;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#chatForm button:hover {
+  background: #517ac9;
+}
+#typewriter {
+  border-right: none !important;
+  animation: none !important;
+  caret-color: transparent !important; /* skjuler den egentlige tekstmarkør */
+  user-select: none !important;
+  pointer-events: none !important;
+}
+/* Dashboard knap skal ligne andre links */
+#dashboardNav {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4rem 0.5rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+/* Hover state matcher øvrige links */
+#dashboardNav:hover {
+  color: #4b8cfb;
+  border-bottom: 2px solid #4b8cfb;
+}
