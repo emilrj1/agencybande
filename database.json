@@ -1,0 +1,30 @@
+{
+  "weaponPrices": {
+    "-Mx1abcde": { "name": "Pistol", "price": 1000 },
+    "-Mx1fghij": { "name": "Rifle", "price": 3000 }
+  },
+  "forumUsers": {
+    "-Mx2abcde": { "email": "user1@example.com", "name": "Bruger 1" },
+    "-Mx2fghij": { "email": "user2@example.com", "name": "Bruger 2" }
+  },
+  "drugLabs": {
+    "-N8abcd1234": {
+      "image": "https://example.com/billede1.png",
+      "message": "Denne druglab ligger i byen"
+    },
+    "-N8efgh5678": {
+      "image": "https://example.com/billede2.png",
+      "message": "Druglab ved floden"
+    }
+  },
+  "markers": {
+    "-N9ijkl9012": {
+      "image": "https://example.com/marker1.png",
+      "message": "Marker tæt ved havnen"
+    },
+    "-N9mnop3456": {
+      "image": "https://example.com/marker2.png",
+      "message": "Marker ved bjergene"
+    }
+  }
+}
